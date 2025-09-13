@@ -41,7 +41,9 @@ body {
     height: 2rem;
 }
 
-.f-info-links , .f-info-socials , .f-info-brand {
+.f-info-links,
+.f-info-socials,
+.f-info-brand {
     width: 100%;
     display: flex;
     align-items: center;
@@ -65,7 +67,7 @@ body {
 
 /* Cards */
 
-.card {
+.listing-card {
     border: none !important;
     margin-bottom: 2rem;
 }
@@ -92,11 +94,12 @@ body {
 /* Card Effect */
 .card {
     opacity: 1;
-} 
+}
+
 .card:hover {
     opacity: 0.60;
     background-color: white;
-} 
+}
 
 /* New Page */
 .add-btn {
@@ -116,10 +119,13 @@ body {
 }
 
 .show-card {
-    padding-left: 0 ;
-    padding-right: 0 ;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 
-
-
+/* Map */
+#map {
+   height: 400px ;
+   width: 80vh;
+}
