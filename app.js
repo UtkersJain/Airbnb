@@ -20,11 +20,16 @@ const listingRouter = require("./routes/listing.js") ;
 const reviewRouter = require("./routes/review.js") ;
 const userRouter = require("./routes/user.js") ;
 
-const port = 8080;
+const port = process.env.PORT || 8080;
 
 app.listen(port, () => {
-    console.log("App started");
+  console.log(`App started on port ${port}`);
 });
+
+
+// app.listen(port, () => {
+//     console.log("App started");
+// });
 
 const dbUrl = process.env.ATLASDB_URL;
 
