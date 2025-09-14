@@ -20,11 +20,11 @@ const listingRouter = require("./routes/listing.js") ;
 const reviewRouter = require("./routes/review.js") ;
 const userRouter = require("./routes/user.js") ;
 
-const port = process.env.PORT || 8080;
+// const port = process.env.PORT || 8080;
 
-app.listen(port, () => {
-  console.log(`App started on port ${port}`);
-});
+// app.listen(port, () => {
+//   console.log(`App started on port ${port}`);
+// });
 
 
 // app.listen(port, () => {
@@ -127,4 +127,7 @@ app.use((err, req, res, next) => {
     // res.status(statusCode).send(message) ;
     res.status(statusCode).render("error.ejs", { message });
 });
+
+module.exports = app;
+
 
